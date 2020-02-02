@@ -24,7 +24,7 @@ class NetworkConnectionInterceptor(
             throw NoInternetException("Make sure you have an active data connection")
         val request =
             chain.request().newBuilder()
-                .addHeader("x-rapidapi-key", "xHjPEqdOSVmshSxKAnUTUp6WK2Zdp14Yq87jsnxRwtyyoUmyAV")
+                .addHeader("x-rapidapi-key", "YOUR_API_KEY")
                 .build()
         logApiCall(chain)
         return chain.proceed(request)
